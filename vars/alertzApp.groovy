@@ -5,7 +5,7 @@ def call('String repoUrl'){
   stages{
     stage('git-clone'){
       steps{
-         checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'test1-project', url: 'https://github.com/Abaree/module2_ci.git']]])
+         checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'test1-project', url: 'https://github.com/Abaree/3tech_shared_repo.git']]])
       }
     }
     stage('etech-hello'){

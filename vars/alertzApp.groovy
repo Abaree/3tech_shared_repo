@@ -1,5 +1,5 @@
 def call('String repoUrl'){
- pipeline{
+pipeline{
   agent any 
   tools { maven 'maven'}
   stages{
